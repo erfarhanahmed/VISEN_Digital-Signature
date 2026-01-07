@@ -1,0 +1,18 @@
+managed implementation in class zbp_i_tds_sign_update unique;
+//strict ( 2 );
+
+define behavior for ZI_TDS_SIGN_UPDATE //alias <alias_name>
+persistent table ztds_sign_update
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+  mapping for ZTDS_SIGN_UPDATE { Companycode = companycode;
+                                 Documentnumber = documentnumber;
+                                 Base64 = base64;
+                                 Status = status;
+                                 Username = username; }
+}

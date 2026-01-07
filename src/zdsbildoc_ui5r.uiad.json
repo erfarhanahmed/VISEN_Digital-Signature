@@ -1,0 +1,35 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "Digital Signature Billing Documents",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Digital Signature Billing Documents"
+  },
+  "ui5AppDetails": {
+    "appId": "visendigitalsignature.visendigitalsignature"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_CD6B1648FE2464DF730C34E7AFF4CA934B44929F_TM",
+    "semanticObject": "DSBILDOC",
+    "action": "Sign",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_CD6B1648FE2464DF730C34E7AFF4CA934B44929F_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Digital Signature Billing Documents",
+        "subtitle": "Digital Signature Billing Documents"
+      }
+    }
+  ]
+}

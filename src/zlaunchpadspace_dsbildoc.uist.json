@@ -1,0 +1,16 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Launchpad Space for DSBILDOC",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "title": "Digital Signature Billing Documents"
+  },
+  "pages": [
+    {
+      "name": "ZLAUNCHPADPAGE_DSBILDOC"
+    }
+  ]
+}

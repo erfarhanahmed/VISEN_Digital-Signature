@@ -1,0 +1,26 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Launchpad page for Digital Signature",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "title": "Digital Signature"
+  },
+  "sections": [
+    {
+      "id": "SECTION_1",
+      "title": "Digital Signature",
+      "visualizations": [
+        {
+          "id": "SECTION_1_VIZ_1",
+          "ladiAssignment": {
+            "ladiId": "ZSD_V4_1_UI5R",
+            "tileId": "UI5R_69EDD208F939650476ED51A917BE429C3AECF444_AL"
+          }
+        }
+      ]
+    }
+  ]
+}

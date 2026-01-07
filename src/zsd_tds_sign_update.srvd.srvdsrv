@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Defintion for sign update'
+define service ZSD_TDS_SIGN_UPDATE {
+  expose ZC_TDS_SIGN_UPDATE;
+}

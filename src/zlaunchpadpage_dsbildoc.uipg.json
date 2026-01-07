@@ -1,0 +1,26 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Launchpad Page for DSBILDOC",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "title": "Digital Signature on Billing Documents"
+  },
+  "sections": [
+    {
+      "id": "SECTION_1",
+      "title": "SECTION 1",
+      "visualizations": [
+        {
+          "id": "SECTION_1_VIZ_1",
+          "ladiAssignment": {
+            "ladiId": "ZBILLDOC_UI5R",
+            "tileId": "UI5R_5BD1898DC1263B2E19CD4ECF2F94784387BF5035_AL"
+          }
+        }
+      ]
+    }
+  ]
+}

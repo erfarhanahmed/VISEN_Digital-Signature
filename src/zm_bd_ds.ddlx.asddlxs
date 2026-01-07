@@ -1,0 +1,75 @@
+@Metadata.layer: #CORE
+@UI:{ headerInfo: { typeName: 'Billing Document',
+                    typeNamePlural: 'Billing Documents',
+                    title: { type: #STANDARD, label: 'Digital Signature' }}}
+annotate view ZC_BD_DS with
+{
+  @UI.facet: [{ id: 'DS',
+            purpose: #STANDARD,
+            type: #IDENTIFICATION_REFERENCE,
+            label: 'Sign Digitally',
+            position: 01 }]
+
+  @UI: { lineItem: [{ position: 10, label: 'Document Number' },
+  { type: #FOR_ACTION, dataAction: 'BDDigitalSignature', label: 'Sign Digitally', position: 10 },
+                               { type: #FOR_ACTION, dataAction: 'InternalMail', label: 'Internal Mail',  position: 20 },
+                               { type: #FOR_ACTION, dataAction: 'ExternalMail', label: 'External Mail',  position: 30 }],
+                identification: [{ position: 10, label: 'Document Number'  },
+                { type: #FOR_ACTION, dataAction: 'BDDigitalSignature', label: 'Sign Digitally', position: 10 },
+                               { type: #FOR_ACTION, dataAction: 'InternalMail', label: 'Internal Mail',  position: 20 },
+                               { type: #FOR_ACTION, dataAction: 'ExternalMail', label: 'External Mail',  position: 30 }]
+  //              ,selectionField: [{ position: 10 }]
+                }
+  BillingDocument;
+  @UI: { lineItem: [{ position: 20, label: 'Sign Status' }],
+             identification: [{ position: 20, label: 'Sign Status' }]}
+  statussign;
+  //   @UI: { lineItem: [{ position: 30 }],
+  //              identification: [{ position: 30 }]}
+  //   URLSign;
+  @UI: { lineItem: [{ position: 40, label: 'Billing Doc Type' }],
+                identification: [{ position: 40, label: 'Billing Doc Type'  }]}
+  BillingDocumentType;
+  @UI: { lineItem: [{ position: 45, label: 'Document Date' }],
+                identification: [{ position: 45, label: 'Document Date'  }]}
+  //              selectionField: [{ position: 45 }]}
+  //              @Consumption.filter.mandatory: true
+  BillingDocumentDate;
+  //   @Consumption.valueHelpDefinition: [{entity: {element: 'createdby' , name: 'ZI_SH_CREATEDBY' }}]
+  @UI: { lineItem: [{ position: 50, label: 'Created User' }],
+                identification: [{ position: 50, label: 'Created User'  }]
+  //              ,selectionField: [{ position: 45 }]
+                }
+  CreatedByUser;
+  @UI: { lineItem: [{ position: 60, label: 'Created Date' }],
+                identification: [{ position: 60, label: 'Created Date'  }]}
+  CreationDate;
+  @UI: { lineItem: [{ position: 70, label: 'Company Code' }],
+                identification: [{ position: 70, label: 'Company Code'  }]}
+  CompanyCode;
+  @UI: { lineItem: [{ position: 80, label: 'Sales Organization' }],
+                identification: [{ position: 80, label: 'Sales Organization'  }]}
+  SalesOrganization;
+  @UI: { lineItem: [{ position: 90, label: 'Dist Channel' }],
+                identification: [{ position: 90, label: 'Dist Channel'  }]}
+  DistributionChannel;
+  @UI: { lineItem: [{ position: 100, label: 'Division' }],
+                identification: [{ position: 100, label: 'Division'  }]}
+  Division;
+  //@UI: { lineItem: [{ position: 110, label: 'Plant' }],
+  //              identification: [{ position: 110, label: 'Plant'  }]}
+  ////              selectionField: [{ position: 04 }]}
+  //   Plant;
+  //   @UI: { lineItem: [{ position: 14, label: 'Digitally Signed PDF' }],
+  //              identification: [{ position: 14, label: 'Digitally Signed PDF'  }]}
+  //   Attachment;
+  //@UI: { lineItem: [{ position: 120, label: 'statussign' }],
+  //              identification: [{ position: 120, label: 'statussign'  }]}
+  //   statussign;
+
+
+  //   @UI: { lineItem: [{ position: 140 }],
+  //              identification: [{ position: 140 }]}
+  //   sign_status;
+
+}

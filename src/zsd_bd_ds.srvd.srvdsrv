@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Definition for BD DS'
+define service ZSD_BD_DS {
+  expose ZC_BD_DS;
+}

@@ -1,0 +1,34 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "Digital Signature",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Digital Signature"
+  },
+  "ui5AppDetails": {
+    "appId": "digitalsign.digitalsign"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_16089F129245F285EB935297DD3709D869AF008E_TM",
+    "semanticObject": "DSBill",
+    "action": "Sign",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_16089F129245F285EB935297DD3709D869AF008E_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Digital Signature"
+      }
+    }
+  ]
+}

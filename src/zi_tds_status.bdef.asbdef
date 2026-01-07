@@ -1,0 +1,21 @@
+managed implementation in class zbp_i_tds_status unique;
+//strict ( 2 );
+
+define behavior for ZI_TDS_STATUS //alias <alias_name>
+persistent table ztds_status
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+
+  mapping for ztds_status {
+  Companycode = companycode;
+  Documentnumber = documentnumber;
+  Username = username;
+  Base64 = base64;
+  }
+
+}

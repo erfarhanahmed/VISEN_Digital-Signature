@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Defintion for base64 upload'
+define service ZSD_TDS_STATUS {
+  expose ZC_TDS_STATUS;
+}

@@ -1,0 +1,30 @@
+@Metadata.layer: #CORE
+@UI:{ headerInfo: { typeName: 'Sign Update Status',
+                    typeNamePlural: 'Sign Update Status',
+                    title: { type: #STANDARD, label: 'Sign Update Status' }}}
+annotate entity ZC_TDS_SIGN_UPDATE
+    with 
+{
+    @UI.facet: [{ id: 'Satus',
+              purpose: #STANDARD,
+              type: #IDENTIFICATION_REFERENCE,
+              label: 'Sign Digitally',
+              position: 01 }]
+              
+    @UI: { lineItem: [{ position: 01, label: 'Document Number' }],
+              identification: [{ position: 01, label: 'Document Number'  }]}
+    Documentnumber;
+    @UI: { lineItem: [{ position: 02, label: 'Company Code' }],
+              identification: [{ position: 02, label: 'Company Code'  }]}
+    Companycode;
+    @UI: { lineItem: [{ position: 03, label: 'User Name' }],
+              identification: [{ position: 03, label: 'User Name'  }]}
+    Username;
+    @UI: { lineItem: [{ position: 04, label: 'Base64' }],
+              identification: [{ position: 04, label: 'Base64'  }]}
+    Base64;
+    @UI: { lineItem: [{ position: 05, label: 'Status' }],
+              identification: [{ position: 05, label: 'Status'  }]}
+    Status;
+    
+} 

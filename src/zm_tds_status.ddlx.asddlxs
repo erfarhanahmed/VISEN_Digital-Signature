@@ -1,0 +1,33 @@
+@Metadata.layer: #CORE
+@UI:{ headerInfo: { typeName: 'Billing Document',
+                    typeNamePlural: 'Billing Documents',
+                    title: { type: #STANDARD, label: 'Digital Signature' }}}
+annotate entity ZC_TDS_STATUS
+    with 
+{
+
+@UI.facet: [{ id: 'DS',
+              purpose: #STANDARD,
+              type: #IDENTIFICATION_REFERENCE,
+              label: 'Sign Digitally',
+              position: 01 }]
+
+   @UI: { lineItem: [{ position: 02, label: 'Document Number' }],
+              identification: [{ position: 02, label: 'Document Number'  }]}
+    Documentnumber;
+    @UI: { lineItem: [{ position: 01, label: 'Company Code' }],
+              identification: [{ position: 01, label: 'Company Code'  }]}
+    Companycode;
+    @UI: { lineItem: [{ position: 03, label: 'User Name' }],
+              identification: [{ position: 03, label: 'User Name'  }]}
+    Username;
+    @UI: { lineItem: [{ position: 04, label: 'Base64' }],
+              identification: [{ position: 04, label: 'Base64'  }]}
+    Base64;
+
+//    Documentnumber;
+//    Companycode;
+//    Username;
+//    Base64;
+    
+} 
